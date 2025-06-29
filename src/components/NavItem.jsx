@@ -11,7 +11,7 @@ const NavItem = ({ section, secLink }) => {
             isActive
               ? "text-primary border-b-2 border-primary"
               : "bg-black text-primary"
-          }`
+          } font-grotesk`
         }
       >
         {section}

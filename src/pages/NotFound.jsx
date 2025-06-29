@@ -23,7 +23,7 @@ const NotFound = () => {
         </h3>
         <Link
           to={"/"}
-          className=" my-4 cursor-pointer bg-primary py-2 px-8 font-inter font-semibold text-black hover:outline-2 hover:outline-primary hover:bg-black hover:text-primary"
+          className="transition-all ease-in duration-200 my-4 cursor-pointer bg-primary py-2 px-8 font-inter font-semibold text-black hover:outline-2 hover:outline-primary hover:bg-black hover:text-primary"
         >
           Back
         </Link>
