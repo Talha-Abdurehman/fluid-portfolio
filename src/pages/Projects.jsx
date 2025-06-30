@@ -33,6 +33,14 @@ const Projects = () => {
       imageURL:
         "https://res.cloudinary.com/drid0qpba/image/upload/v1751247526/download_a3veaw.png",
     },
+    {
+      id: 3,
+      project: "GLUME OS",
+      date: "COMING SOON",
+      categories: ["DEVELOPMENT", "API", "OS"],
+      imageURL:
+        "https://res.cloudinary.com/drid0qpba/image/upload/v1751247526/download_a3veaw.png",
+    },
   ];
 
   return (
@@ -44,6 +52,7 @@ const Projects = () => {
         {projectData.map((item) => {
           return (
             <ProjectItem
+              key={item.id}
               onHover={() => setHoveredImage(item.imageURL)}
               onLeave={() => setHoveredImage(null)}
               id={item.id}
@@ -58,6 +67,7 @@ const Projects = () => {
       <AnimatePresence>
         {hoveredImage && (
           <motion.img
+            loading="lazy"
             src={hoveredImage}
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -66,7 +76,7 @@ const Projects = () => {
               top: mousePos.y + 20,
               left: mousePos.x + 20,
             }}
-            className="fixed z-50 w-56 h-auto pointer-events-none shadow-xl bg-primary p-2"
+            className="fixed z-50 w-60 h-32 pointer-events-none rounded-xl bg-primary p-2"
           />
         )}
       </AnimatePresence>

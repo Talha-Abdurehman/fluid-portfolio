@@ -4,17 +4,17 @@ import Flag from "react-world-flags";
 
 const About = () => {
   return (
-    <div className="min-h-screen px-4 py-12 bg-black text-primary">
+    <div className="min-h-screen px-2 py-12 bg-black text-primary">
       <div className="flex h-full gap-4">
-        <div className="w-1/3 h-full sticky top-20">
+        <div className="block h-full sticky top-20">
           <div className="h-full flex justify-start items-start leading-none  m-0">
-            <h1 className="font-grotesk text-primary  text-7xl font-semibold">
+            <h1 className="font-grotesk text-primary  text-7xl font-semibold whitespace-nowrap">
               ABOUT ME
             </h1>
           </div>
         </div>
-        <div className="w-2/3">
-          <div className=" bg-primary h-screen flex flex-col justify-center px-4 py-6 items-center">
+        <div className="w-full">
+          <div className=" bg-primary h-screen flex flex-col justify-center px-4 py-6 items-center rounded-xl">
             <h1 className="text-black text-4xl text-center">
               <span className="inline-block transform ">
                 <QuoteIcon

@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-black flex justify-between items-center py-6 px-4 ">
-      <NavItem secLink={"home"} section={"HOME"} />
+      <NavItem secLink={""} section={"HOME"} />
       <div className="flex justify-between items-center gap-3">
         {NavbarItems.map((item) => {
           return (

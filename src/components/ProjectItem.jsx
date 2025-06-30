@@ -5,7 +5,7 @@ const ProjectItem = ({ id, project, date, categories, onHover, onLeave }) => {
     <div
       onMouseEnter={onHover}
       onMouseLeave={onLeave}
-      className="flex bg-black cursor-pointer justify-between items-center py-6 border-b-[1] border-primary border-t-2"
+      className="flex bg-black cursor-pointer justify-between items-center py-6 border-primary border-t-2"
     >
       <div className="flex gap-4">
         <h1 className="text-3xl text-primary font-inter font-semibold">{id}</h1>
