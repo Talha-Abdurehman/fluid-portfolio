@@ -1,16 +1,45 @@
 import React from "react";
+import { QuoteIcon } from "lucide-react";
+import Flag from "react-world-flags";
 
 const About = () => {
   return (
-    <div className="container h-screen px-4 py-6 bg-black">
-      <div className="flex items-center justify-center h-full gap-1">
-        <div className="bg-primary h-full flex justify-start items-start leading-none p-4 m-0">
-          <h1 className="font-grotesk text-black text-7xl whitespace-nowrap">
-            ABOUT ME
-          </h1>
+    <div className="min-h-screen px-4 py-12 bg-black text-primary">
+      <div className="flex h-full gap-4">
+        <div className="w-1/3 h-full sticky top-20">
+          <div className="h-full flex justify-start items-start leading-none  m-0">
+            <h1 className="font-grotesk text-primary  text-7xl font-semibold">
+              ABOUT ME
+            </h1>
+          </div>
         </div>
-        <div className="w-full bg-primary h-full flex justify-center items-center">
-          <h1 className="text-black">WTH</h1>
+        <div className="w-2/3">
+          <div className=" bg-primary h-screen flex flex-col justify-center px-4 py-6 items-center">
+            <h1 className="text-black text-4xl text-center">
+              <span className="inline-block transform ">
+                <QuoteIcon
+                  color="#000000"
+                  fill="#000000"
+                  size={34}
+                  className="scale-x-[-1]"
+                />
+              </span>{" "}
+              Based in Pakistan{" "}
+              <span className="inline-block m-0 p-0">
+                <Flag
+                  code="PK"
+                  style={{ height: 34, width: 34, margin: 0, padding: 0 }}
+                />
+              </span>
+              , I'm a MERN stack engineer who builds more than websites, I craft
+              experiences && interactions. My work fuses aesthetically pleasing
+              animations, swiss-brutalist design and clean architecture to
+              challenge the ordinary.{" "}
+              <span className="inline-block">
+                <QuoteIcon color="#000000" fill="#000000" size={34} />
+              </span>
+            </h1>
+          </div>
         </div>
       </div>
     </div>

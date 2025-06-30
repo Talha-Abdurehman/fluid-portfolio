@@ -1,7 +1,77 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+// eslint-disable-next-line no-unused-vars
+import { motion, AnimatePresence } from "framer-motion";
+import ProjectItem from "../components/ProjectItem";
 
 const Projects = () => {
-  return <div>Projects</div>;
+  const [hoveredImage, setHoveredImage] = useState(null);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setMousePos({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  });
+
+  const projectData = [
+    {
+      id: 1,
+      project: "PORTFOLIO I",
+      date: 2025,
+      categories: ["DEVELOPMENT", "DESIGN", "BRANDING"],
+      imageURL:
+        "https://res.cloudinary.com/drid0qpba/image/upload/v1751248617/image_o6bfdq.png",
+    },
+    {
+      id: 2,
+      project: "SUBHAN-TRADERS-POS",
+      date: 2025,
+      categories: ["DEVELOPMENT", "API", "DATABASE"],
+      imageURL:
+        "https://res.cloudinary.com/drid0qpba/image/upload/v1751247526/download_a3veaw.png",
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-black px-4 py-12 space-y-9">
+      <h1 className="text-7xl font-grotesk text-primary font-semibold">
+        PROJECTS
+      </h1>
+      <div className="flex flex-col">
+        {projectData.map((item) => {
+          return (
+            <ProjectItem
+              onHover={() => setHoveredImage(item.imageURL)}
+              onLeave={() => setHoveredImage(null)}
+              id={item.id}
+              project={item.project}
+              date={item.date}
+              categories={item.categories}
+            />
+          );
+        })}
+      </div>
+
+      <AnimatePresence>
+        {hoveredImage && (
+          <motion.img
+            src={hoveredImage}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            style={{
+              top: mousePos.y + 20,
+              left: mousePos.x + 20,
+            }}
+            className="fixed z-50 w-56 h-auto pointer-events-none shadow-xl bg-primary p-2"
+          />
+        )}
+      </AnimatePresence>
+    </div>
+  );
 };
 
 export default Projects;
