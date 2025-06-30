@@ -13,10 +13,13 @@
     "@gsap/react": "^2.1.2",
     "@tailwindcss/vite": "^4.1.11",
     "d3": "^7.9.0",
+    "framer-motion": "^12.19.2",
     "gsap": "^3.13.0",
+    "lucide-react": "^0.525.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router": "^7.6.3",
+    "react-world-flags": "^1.6.0",
     "simplex-noise": "^4.0.3",
     "tailwindcss": "^4.1.11"
   },
