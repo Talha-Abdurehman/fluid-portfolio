@@ -10,7 +10,7 @@ const Loading = () => {
   return (
     <div
       ref={loaderRef}
-      className="bg-black text-primary text-4xl w-full h-full"
+      className="bg-main text-primary text-4xl w-full h-full"
     >
       {loaderRef.current}
     </div>

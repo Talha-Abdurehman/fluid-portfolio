@@ -7,7 +7,7 @@ html {
   }
 
   &::-webkit-scrollbar-track {
-    @apply bg-black;
+    @apply bg-main;
   }
 
   &::-webkit-scrollbar-thumb {
@@ -21,7 +21,7 @@ html {
 
 @theme {
   /* Colors */
-  --color-bg-main: #121212;
+  --color-main: #0d0d0d;
   --color-primary: #dd0000;
   --color-text-main: #eaeaea;
 

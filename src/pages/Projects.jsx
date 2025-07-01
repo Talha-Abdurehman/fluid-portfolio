@@ -18,7 +18,7 @@ const Projects = () => {
 
   const projectData = [
     {
-      id: 1,
+      id: "01",
       project: "PORTFOLIO I",
       date: 2025,
       categories: ["DEVELOPMENT", "DESIGN", "BRANDING"],
@@ -26,24 +26,76 @@ const Projects = () => {
         "https://res.cloudinary.com/drid0qpba/image/upload/v1751248617/image_o6bfdq.png",
     },
     {
-      id: 2,
+      id: "02",
       project: "SUBHAN-TRADERS-POS",
       date: 2025,
       categories: ["DEVELOPMENT", "API", "DATABASE"],
       imageURL:
         "https://res.cloudinary.com/drid0qpba/image/upload/v1751247526/download_a3veaw.png",
     },
+    {
+      id: "03",
+      project: "GLUME OS",
+      date: "COMING SOON",
+      categories: ["DEVELOPMENT", "API", "OS"],
+      imageURL:
+        "https://res.cloudinary.com/drid0qpba/image/upload/v1751247526/download_a3veaw.png",
+    },
+    {
+      id: "04",
+      project: "PORTFOLIO I",
+      date: 2025,
+      categories: ["DEVELOPMENT", "DESIGN", "BRANDING"],
+      imageURL:
+        "https://res.cloudinary.com/drid0qpba/image/upload/v1751248617/image_o6bfdq.png",
+    },
+    {
+      id: "05",
+      project: "SUBHAN-TRADERS-POS",
+      date: 2025,
+      categories: ["DEVELOPMENT", "API", "DATABASE"],
+      imageURL:
+        "https://res.cloudinary.com/drid0qpba/image/upload/v1751247526/download_a3veaw.png",
+    },
+    {
+      id: "06",
+      project: "GLUME OS",
+      date: "COMING SOON",
+      categories: ["DEVELOPMENT", "API", "OS"],
+      imageURL:
+        "https://res.cloudinary.com/drid0qpba/image/upload/v1751247526/download_a3veaw.png",
+    },
+    {
+      id: "07",
+      project: "SUBHAN-TRADERS-POS",
+      date: 2025,
+      categories: ["DEVELOPMENT", "API", "DATABASE"],
+      imageURL:
+        "https://res.cloudinary.com/drid0qpba/image/upload/v1751247526/download_a3veaw.png",
+    },
+    {
+      id: "08",
+      project: "GLUME OS",
+      date: "COMING SOON",
+      categories: ["DEVELOPMENT", "API", "OS"],
+      imageURL:
+        "https://res.cloudinary.com/drid0qpba/image/upload/v1751247526/download_a3veaw.png",
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-black px-4 py-12 space-y-9">
-      <h1 className="text-7xl font-grotesk text-primary font-semibold">
-        PROJECTS
-      </h1>
-      <div className="flex flex-col">
+    <div className="min-h-screen  bg-main px-4 py-12">
+      <div className="sticky top-[4.5rem] bg-main w-full h-full py-6">
+        {" "}
+        <h1 className="xl:text-7xl 2xl:text-9xl font-grotesk text-primary font-semibold">
+          PROJECTS
+        </h1>
+      </div>
+      <div className="xl:flex xl:xl:flex-col">
         {projectData.map((item) => {
           return (
             <ProjectItem
+              key={item.id}
               onHover={() => setHoveredImage(item.imageURL)}
               onLeave={() => setHoveredImage(null)}
               id={item.id}
@@ -58,6 +110,7 @@ const Projects = () => {
       <AnimatePresence>
         {hoveredImage && (
           <motion.img
+            loading="lazy"
             src={hoveredImage}
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -66,7 +119,7 @@ const Projects = () => {
               top: mousePos.y + 20,
               left: mousePos.x + 20,
             }}
-            className="fixed z-50 w-56 h-auto pointer-events-none shadow-xl bg-primary p-2"
+            className="fixed z-50 w-60 h-32 pointer-events-none rounded-xl bg-primary p-2"
           />
         )}
       </AnimatePresence>
