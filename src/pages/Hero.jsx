@@ -20,7 +20,7 @@ const Hero = () => {
           TALHA
         </h1>
       </div>
-      <h3 className="font-inter font-extralight text-[12rem] p-0 m-0 leading-none text-primary  tracking-[3.5rem] -mr-[3.5rem]">
+      <h3 className="font-inter font-extralight  xl:text-[6rem] 2xl:text-[12rem] p-0 m-0 leading-none text-primary  tracking-[3.5rem] -mr-[3.5rem]">
         ABDUREHMAN
       </h3>
     </div>

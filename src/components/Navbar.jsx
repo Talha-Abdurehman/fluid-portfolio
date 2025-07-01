@@ -9,9 +9,9 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="bg-main xl:flex justify-between xl:items-center py-6 px-8 ">
+    <div className="bg-main xl:flex justify-between xl:items-center xl:py-6 2xl:py-7 px-8 ">
       <NavItem secLink={""} section={"HOME"} />
-      <div className="xl:flex justify-between xl:items-center gap-3">
+      <div className="xl:flex justify-between xl:items-center xl:gap-3 2xl:gap-5">
         {NavbarItems.map((item) => {
           return (
             <NavItem

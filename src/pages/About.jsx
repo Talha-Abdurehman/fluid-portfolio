@@ -5,7 +5,7 @@ import Flag from "react-world-flags";
 
 const About = () => {
   return (
-    <div className="min-h-screen px-2 py-12 bg-main text-primary">
+    <div className="min-h-screen px-2 xl:py-12 2xl:py-24 bg-main text-primary">
       <div className="xl:flex h-full xl:gap-4">
         <div className="block h-full sticky top-20">
           <div className="h-full xl:flex justify-start items-start leading-none  m-0">
