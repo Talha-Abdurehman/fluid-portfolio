@@ -5,24 +5,24 @@ const ProjectItem = ({ id, project, date, categories, onHover, onLeave }) => {
     <div
       onMouseEnter={onHover}
       onMouseLeave={onLeave}
-      className="flex bg-black cursor-pointer justify-between items-center py-6 border-primary border-t-2"
+      className="xl:flex bg-main cursor-pointer justify-between xl:items-center py-6 border-primary border-t-2"
     >
-      <div className="flex gap-4">
-        <h1 className="text-3xl text-primary font-inter font-semibold">{id}</h1>
-        <h1 className="text-3xl text-primary font-inter font-semibold">
+      <div className="xl:flex xl:gap-4">
+        <h1 className="xl:text-4xl 2xl:text-6xl text-primary font-grotesk font-light">
+          {id}
+        </h1>
+        <h1 className="xl:text-4xl 2xl:text-6xl text-primary font-grotesk font-semibold">
           {project}
         </h1>
       </div>
 
-      <div className="flex gap-4">
-        <h1 className="text-xl text-primary font-inter font-semibold">
-          {`/${date}`}
-        </h1>
-        <div className="flex gap-4">
+      <div className="xl:flex xl:gap-4">
+        <h1 className="xl:text-lg 2xl:text-3xl text-primary font-inter">{`/${date}`}</h1>
+        <div className="xl:flex xl:gap-4">
           {categories.map((category, index) => {
             return (
               <h1
-                className="text-xl text-primary font-inter font-semibold"
+                className="xl:text-lg 2xl:text-3xl text-primary font-inter"
                 key={index}
               >
                 {`/${category}`}

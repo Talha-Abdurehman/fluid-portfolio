@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 const NotFound = () => {
   return (
-    <div className="w-full h-screen bg-amber-500 relative flex flex-col p-4 justify-center items-center">
+    <div className="w-full h-screen bg-amber-500 relative xl:flex xl:xl:flex-col p-4 xl:justify-center xl:items-center">
       <video
         loop
         muted
@@ -16,14 +16,14 @@ const NotFound = () => {
           type="video/mp4"
         />
       </video>
-      <div className="z-10 bg-black w-full h-2/3 flex flex-col justify-center items-center gap-2">
-        <h1 className="font-grotesk text-primary text-7xl">ERROR 404</h1>
+      <div className="z-10 bg-main w-full h-2/3 xl:flex xl:xl:flex-col xl:justify-center xl:items-center gap-2">
+        <h1 className="font-grotesk text-primary xl:text-7xl">ERROR 404</h1>
         <h3 className="font-inter text-primary font-extralight tracking-widest text-3xl">
           NOT FOUND!
         </h3>
         <Link
           to={"/"}
-          className="transition-all ease-in duration-200 my-4 cursor-pointer bg-primary py-2 px-8 font-inter font-semibold text-black hover:outline-2 hover:outline-primary hover:bg-black hover:text-primary"
+          className="transition-all ease-in duration-200 my-4 cursor-pointer bg-primary py-2 px-8 font-inter font-semibold text-black hover:outline-2 hover:outline-primary hover:bg-main hover:text-primary"
         >
           Back
         </Link>

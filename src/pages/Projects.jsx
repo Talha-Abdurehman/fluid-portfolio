@@ -18,7 +18,7 @@ const Projects = () => {
 
   const projectData = [
     {
-      id: 1,
+      id: "01",
       project: "PORTFOLIO I",
       date: 2025,
       categories: ["DEVELOPMENT", "DESIGN", "BRANDING"],
@@ -26,7 +26,7 @@ const Projects = () => {
         "https://res.cloudinary.com/drid0qpba/image/upload/v1751248617/image_o6bfdq.png",
     },
     {
-      id: 2,
+      id: "02",
       project: "SUBHAN-TRADERS-POS",
       date: 2025,
       categories: ["DEVELOPMENT", "API", "DATABASE"],
@@ -34,7 +34,47 @@ const Projects = () => {
         "https://res.cloudinary.com/drid0qpba/image/upload/v1751247526/download_a3veaw.png",
     },
     {
-      id: 3,
+      id: "03",
+      project: "GLUME OS",
+      date: "COMING SOON",
+      categories: ["DEVELOPMENT", "API", "OS"],
+      imageURL:
+        "https://res.cloudinary.com/drid0qpba/image/upload/v1751247526/download_a3veaw.png",
+    },
+    {
+      id: "04",
+      project: "PORTFOLIO I",
+      date: 2025,
+      categories: ["DEVELOPMENT", "DESIGN", "BRANDING"],
+      imageURL:
+        "https://res.cloudinary.com/drid0qpba/image/upload/v1751248617/image_o6bfdq.png",
+    },
+    {
+      id: "05",
+      project: "SUBHAN-TRADERS-POS",
+      date: 2025,
+      categories: ["DEVELOPMENT", "API", "DATABASE"],
+      imageURL:
+        "https://res.cloudinary.com/drid0qpba/image/upload/v1751247526/download_a3veaw.png",
+    },
+    {
+      id: "06",
+      project: "GLUME OS",
+      date: "COMING SOON",
+      categories: ["DEVELOPMENT", "API", "OS"],
+      imageURL:
+        "https://res.cloudinary.com/drid0qpba/image/upload/v1751247526/download_a3veaw.png",
+    },
+    {
+      id: "07",
+      project: "SUBHAN-TRADERS-POS",
+      date: 2025,
+      categories: ["DEVELOPMENT", "API", "DATABASE"],
+      imageURL:
+        "https://res.cloudinary.com/drid0qpba/image/upload/v1751247526/download_a3veaw.png",
+    },
+    {
+      id: "08",
       project: "GLUME OS",
       date: "COMING SOON",
       categories: ["DEVELOPMENT", "API", "OS"],
@@ -44,11 +84,14 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black px-4 py-12 space-y-9">
-      <h1 className="text-7xl font-grotesk text-primary font-semibold">
-        PROJECTS
-      </h1>
-      <div className="flex flex-col">
+    <div className="min-h-screen  bg-main px-4 py-12">
+      <div className="sticky top-[4.5rem] bg-main w-full h-full py-6">
+        {" "}
+        <h1 className="xl:text-7xl 2xl:text-9xl font-grotesk text-primary font-semibold">
+          PROJECTS
+        </h1>
+      </div>
+      <div className="xl:flex xl:xl:flex-col">
         {projectData.map((item) => {
           return (
             <ProjectItem
