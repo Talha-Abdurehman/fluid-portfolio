@@ -5,19 +5,19 @@ import Flag from "react-world-flags";
 
 const About = () => {
   return (
-    <div className="min-h-screen px-2 xl:py-12 2xl:py-24 bg-main text-primary">
+    <div className="sm:min-h-screen px-2 xl:py-12 2xl:py-24 bg-main text-primary">
       <div className="xl:flex h-full xl:gap-4">
-        <div className="block h-full sticky top-20 pt-6">
+        <div className="block h-full sm:sticky top-20 pt-6 ">
           <div className="h-full xl:flex justify-start items-start leading-none  m-0">
-            <h1 className="font-grotesk text-primary  xl:text-7xl 2xl:text-9xl font-semibold whitespace-nowrap">
+            <h1 className="font-grotesk text-primary max-sm:text-3xl xl:text-7xl 2xl:text-9xl font-semibold whitespace-nowrap">
               ABOUT ME
             </h1>
           </div>
         </div>
-        <div className="w-full pt-6">
-          <div className="relative bg-primary h-screen xl:flex xl:xl:flex-col xl:justify-center px-12 py-6 xl:items-center rounded-xl">
+        <div className="w-full pt-6 max-sm:pt-2">
+          <div className="relative bg-primary sm:h-screen xl:flex xl:xl:flex-col xl:justify-center px-12 py-6 xl:items-center rounded-xl">
             <h1 className="text-text-main xl:text-4xl 2xl:text-6xl text-center">
-              <span className="inline-block transform ">
+              <span className="inline-block ">
                 <QuoteIcon fill="#eaeaea" size={44} className="scale-x-[-1]" />
               </span>{" "}
               Based in Pakistan{" "}

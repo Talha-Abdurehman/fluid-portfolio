@@ -85,13 +85,13 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen  bg-main px-4 py-12">
-      <div className="sticky top-18 block bg-main w-full h-full py-8">
+      <div className="sticky top-18 block bg-main w-full h-full max-sm:py-2 py-8 ">
         {" "}
-        <h1 className="xl:text-7xl 2xl:text-9xl font-grotesk text-primary font-semibold">
+        <h1 className="max-sm:text-3xl xl:text-7xl 2xl:text-9xl font-grotesk text-primary font-semibold">
           PROJECTS
         </h1>
       </div>
-      <div className="xl:flex xl:xl:flex-col">
+      <div className="flex flex-col">
         {projectData.map((item) => {
           return (
             <ProjectItem
