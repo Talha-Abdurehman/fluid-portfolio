@@ -85,7 +85,7 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen  bg-main px-4 py-12">
-      <div className="sticky top-[4.5rem] bg-main w-full h-full py-6">
+      <div className="sticky top-18 block bg-main w-full h-full py-8">
         {" "}
         <h1 className="xl:text-7xl 2xl:text-9xl font-grotesk text-primary font-semibold">
           PROJECTS

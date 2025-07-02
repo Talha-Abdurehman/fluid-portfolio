@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
         <Navbar />
       </header>
 
-      <main className="xl:flex xl:xl:flex-col px-4">{children}</main>
+      <main className="flex flex-col px-4">{children}</main>
 
       <footer>
         <Footer />
