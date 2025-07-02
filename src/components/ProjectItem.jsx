@@ -5,7 +5,7 @@ const ProjectItem = ({ id, project, date, categories, onHover, onLeave }) => {
     <div
       onMouseEnter={onHover}
       onMouseLeave={onLeave}
-      className="xl:flex bg-main cursor-pointer justify-between xl:items-center py-6 border-primary border-t-2"
+      className="xl:flex bg-main cursor-pointer justify-between xl:items-center py-6 max-sm:py-2 border-primary border-t-2"
     >
       <div className="xl:flex xl:gap-4">
         <h1 className="xl:text-4xl 2xl:text-6xl text-primary font-grotesk font-light">
