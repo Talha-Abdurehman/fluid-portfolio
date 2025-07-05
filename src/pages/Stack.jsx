@@ -16,7 +16,7 @@ const Stack = () => {
       </div>
       <div className=" w-full rounded-xl flex justify-between py-12 items-center gap-6">
         {titles.map((title) => {
-          return <Accordian title={title.title} />;
+          return <Accordian key={title.id} title={title.title} />;
         })}
       </div>
     </div>
