@@ -3,9 +3,9 @@ import NavItem from "./NavItem";
 
 const Navbar = () => {
   const NavbarItems = [
-    { id: 1, section: "ABOUT", secLink: "about" },
-    { id: 2, section: "PROJECTS", secLink: "projects" },
-    { id: 3, section: "CONTACT", secLink: "contact" },
+    { id: 1, section: "HIRE ME", secLink: "hire" },
+    { id: 2, section: "RESUME", secLink: "resume" },
+    { id: 3, section: "MENU", secLink: "menu" },
   ];
 
   return (
