@@ -17,13 +17,13 @@ const Footer = () => {
     { id: 3, platform: "DRIBBLE", link: "#" },
   ];
   return (
-    <div className="bg-primary max-sm:h-auto xl:h-screen max-sm:min-h-screen py-4 px-6 rounded-t-xl flex flex-col justify-between items-center max-sm:justify-start max-sm:gap-12">
+    <div className="bg-primary max-sm:h-auto xl:h-screen max-sm:min-h-screen py-4 px-6 rounded-t-xl flex flex-col justify-between items-center max-sm:justify-between max-sm:gap-12">
       <h1 className="text-text-main max-sm:text-3xl xl:text-7xl 2xl:text-9xl font-grotesk font-semibold">
         LET'S ACHIEVE SOMETHING GREAT TOGETHER!
       </h1>
 
-      <section className="w-full flex max-sm:flex-col max-sm:max-h-screen   justify-between items-center max-sm:gap-6 xl:gap-16 max-sm:overflow-scroll">
-        <div className=" flex flex-col  w-full gap-2">
+      <section className="w-full flex max-sm:flex-col max-sm:max-h-screen   justify-between items-center max-sm:gap-10 xl:gap-16 max-sm:overflow-scroll">
+        <div className=" flex flex-col  w-full gap-2 max-sm:space-y-0">
           <h1 className="font-grotesk text-text-main max-sm:text-2xl xl:text-4xl font-semibold">
             CONTACT ME
           </h1>
@@ -63,7 +63,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full flex flex-col space-y-2">
+        <div className="w-full flex flex-col space-y-2 max-sm:space-y-0">
           <h1 className="font-grotesk text-text-main max-sm:text-2xl xl:text-4xl font-semibold">
             SOCIALS
           </h1>
@@ -97,7 +97,7 @@ const Footer = () => {
       </section>
 
       <div>
-        <h1 className="text-text-main font-inter xl:text-lg">
+        <h1 className="text-text-main font-inter xl:text-lg max-sm:text-center">
           DESIGNED && DEVELOPED BY TALHA WITH 🤍
         </h1>
       </div>
