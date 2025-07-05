@@ -18,12 +18,17 @@ const About = () => {
           <div className="relative bg-primary sm:h-screen xl:flex xl:xl:flex-col xl:justify-center px-12 py-6 xl:items-center rounded-xl">
             <h1 className="text-text-main xl:text-4xl 2xl:text-6xl text-center">
               <span className="inline-block ">
-                <QuoteIcon fill="#eaeaea" size={44} className="scale-x-[-1]" />
+                <QuoteIcon
+                  fill="#eaeaea"
+                  size={44}
+                  className="scale-x-[-1] max-sm:w-4 max-sm:h-4"
+                />
               </span>{" "}
               Based in Pakistan{" "}
-              <span className="inline-block p-0 ">
+              <span className="inline-block p-0 max-sm:h-7 max-sm:w-7 ">
                 <Flag
                   code="PK"
+                  className=""
                   style={{ height: 44, width: 44, margin: 0, padding: 0 }}
                 />
               </span>
@@ -32,7 +37,11 @@ const About = () => {
               animations, swiss-brutalist design and clean architecture to
               challenge the ordinary.{" "}
               <span className="inline-block">
-                <QuoteIcon fill="#eaeaea" size={44} />
+                <QuoteIcon
+                  fill="#eaeaea"
+                  size={44}
+                  className="max-sm:w-4 max-sm:h-4"
+                />
               </span>
             </h1>
           </div>

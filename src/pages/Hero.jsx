@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-center items-center max-w-scree n  h-screen bg-main xl:pt-16 max-sm:pt-24 ">
+    <div className="flex flex-col justify-center items-center  h-screen bg-main xl:pt-16 max-sm:pt-0 ">
       <div className="relative flex justify-center items-center overflow-hidden">
         <video
           loop
