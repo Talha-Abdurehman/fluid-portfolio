@@ -1,21 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router";
+import { ArrowUpRight } from "lucide-react";
 
 const NavItem = ({ section, secLink }) => {
+  const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="">
+    <div
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className={`flex justify-center items-center xl:gap-2 border-2 ${
+        isHovered ? "rounded-full border-primary" : "border-transparent"
+      } transiton-all duration-300`}
+    >
       <NavLink
         to={`/${secLink}`}
         className={({ isActive }) =>
-          `${
+          `border-b-2 ${
             isActive
-              ? "text-primary border-b-2 border-primary"
-              : "bg-main text-primary"
-          } font-grotesk xl:text-lg 2xl:text-4xl max-sm:text-sm border-2  max-sm:py-1 max-sm:px-2 border-primary py-2 px-4 rounded-full hover:bg-primary hover:text-main transition-all ease-in duration-200`
+              ? " border-primary rounded-none"
+              : "border-transparent rounded-full "
+          } ${
+            isActive && isHovered ? "border-none" : ""
+          } font-grotesk xl:text-lg 2xl:text-4xl max-sm:text-xs   max-sm:py-1 max-sm:px-1 xl:py-1 xl:px-2 text-primary  transition-all ease-in duration-200 `
         }
       >
         {section}
       </NavLink>
+      <ArrowUpRight
+        className={`${
+          isHovered
+            ? "rotate-45  bg-primary text-main rounded-full"
+            : "text-primary bg-main"
+        } transition-all duration-300 border-transparent p-1 xl:w-9 xl:h-9`}
+      />
     </div>
   );
 };
