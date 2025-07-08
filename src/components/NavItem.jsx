@@ -8,9 +8,7 @@ const NavItem = ({ section, secLink }) => {
     <div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`flex justify-center items-center xl:gap-2 border-2 ${
-        isHovered ? "rounded-full border-primary" : "border-transparent"
-      } transiton-all duration-300`}
+      className={`flex justify-center items-center xl:gap-2 transiton-all duration-300 xl:p-1`}
     >
       <NavLink
         to={`/${secLink}`}
